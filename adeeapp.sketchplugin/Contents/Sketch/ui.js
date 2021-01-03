@@ -26,7 +26,8 @@ function createWebView(pageURL, onChangeAndApply, onLoadFinish) {
                 const message = JSON.parse(wkMessage.body());
                 if (message.close) {
                     _window.close();
-                } else {
+                } 
+                else {
                     onChangeAndApply(message, _webView);
                 }
             } catch (error) {

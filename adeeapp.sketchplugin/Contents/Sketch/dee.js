@@ -96,7 +96,7 @@ function onChangeAndApply(items, webView) {
         }
         positionArtboardInPage(duplicate, selectedPage);
         duplicate.layers.map((function apply(layer) {
-            if (layer.type === "ShapePath") {
+            if (layer.type === "ShapePath" | layer.type === "Shape") {
                 if (layer.style.fills[0] != null) {
                     let rgb = HEXtoRGB(layer.style.fills[0].color);
                     let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
@@ -117,6 +117,12 @@ function onChangeAndApply(items, webView) {
                     let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
                     let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
                     layer.style.textColor = hex;
+                }
+                if (layer.style.borders[0] != null) {
+                    rgb = HEXtoRGB(layer.style.borders[0].color);
+                    result = filterFunction([rgb[0], rgb[1], rgb[2]]);
+                    hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
+                    layer.style.borders[0].color = hex;
                 }
             } else if (layer.type === "Image") {
                 const options = { formats: "svg", output: false };
@@ -145,36 +151,47 @@ function onChangeAndApply(items, webView) {
                                     let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
                                     innerLayer.style.fills[0].color = hex;
                                 }
-                                innerLayer.layers.forEach((innerLayer2) => {
-
-                                    if (innerLayer2.type === "ShapePath") {
-                                        if (innerLayer2.style.fills[0] != null) {
-                                            let rgb = HEXtoRGB(innerLayer2.style.fills[0].color);
-                                            let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
-                                            let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
-                                            innerLayer2.style.fills[0].color = hex;
-                                        }
-
-                                        if (innerLayer2.style.borders[0] != null) {
-                                            rgb = HEXtoRGB(innerLayer2.style.borders[0].color);
-                                            result = filterFunction([rgb[0], rgb[1], rgb[2]]);
-                                            hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
-                                            innerLayer2.style.borders[0].color = hex;
-                                        }
+                                innerLayer.layers.forEach(innerLayer2  =>{     
+                                    if (innerLayer2.type === "Group") { 
+                                        apply(innerLayer2);
                                     }
-                                    else if (innerLayer2.type === "Text") {
-                                        if (innerLayer2.style.textColor != null) {
-                                            let rgb = HEXtoRGB(innerLayer2.style.textColor);
-                                            let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
-                                            let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
-                                            innerLayer2.style.textColor = hex;
+                                    else {
+                                        if (innerLayer2.type === "ShapePath" | innerLayer2.type === "Shape") {
+                                            if (innerLayer2.style.fills[0] != null) {
+                                                let rgb = HEXtoRGB(innerLayer2.style.fills[0].color);
+                                                let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
+                                                let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
+                                                innerLayer2.style.fills[0].color = hex;
+                                            }
+
+                                            if (innerLayer2.style.borders[0] != null) {
+                                                rgb = HEXtoRGB(innerLayer2.style.borders[0].color);
+                                                result = filterFunction([rgb[0], rgb[1], rgb[2]]);
+                                                hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
+                                                innerLayer2.style.borders[0].color = hex;
+                                            }
                                         }
+                                        else if (innerLayer2.type === "Text") {
+                                            if (innerLayer2.style.textColor != null) {
+                                                let rgb = HEXtoRGB(innerLayer2.style.textColor);
+                                                let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
+                                                let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
+                                                innerLayer2.style.textColor = hex;
+                                            }
+                                            if (innerLayer2.style.borders[0] != null) {
+                                                rgb = HEXtoRGB(innerLayer2.style.borders[0].color);
+                                                result = filterFunction([rgb[0], rgb[1], rgb[2]]);
+                                                hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
+                                                innerLayer2.style.borders[0].color = hex;
+                                            }
+                                        }
+                                        //else if (layer.type === "Image")
                                     }
-                                    //else if (layer.type === "Image")
-                                });
+                                }
+                            );
                             }
                             else {
-                                if (innerLayer.type === "ShapePath") {
+                                if (innerLayer.type === "ShapePath" | innerLayer.type === "Shape") {
                                     if (innerLayer.style.fills[0] != null) {
                                         let rgb = HEXtoRGB(innerLayer.style.fills[0].color);
                                         let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
@@ -195,6 +212,12 @@ function onChangeAndApply(items, webView) {
                                         let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
                                         let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
                                         innerLayer.style.textColor = hex;
+                                    }
+                                    if (innerLayer.style.borders[0] != null) {
+                                        rgb = HEXtoRGB(innerLayer.style.borders[0].color);
+                                        result = filterFunction([rgb[0], rgb[1], rgb[2]]);
+                                        hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
+                                        innerLayer.style.borders[0].color = hex;
                                     }
                                 }
                                 //else if (layer.type === "Image")
@@ -218,7 +241,7 @@ function onChangeAndApply(items, webView) {
                             apply(innerLayer);
                         }
                         else {
-                            if (innerLayer.type === "ShapePath") {
+                            if (innerLayer.type === "ShapePath" | innerLayer.type === "Shape") {
                                 if (innerLayer.style.fills[0] != null) {
                                     let rgb = HEXtoRGB(innerLayer.style.fills[0].color);
                                     let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
@@ -240,6 +263,12 @@ function onChangeAndApply(items, webView) {
                                     let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
                                     innerLayer.style.textColor = hex;
                                 }
+                                if (innerLayer.style.borders[0] != null) {
+                                    rgb = HEXtoRGB(innerLayer.style.borders[0].color);
+                                    result = filterFunction([rgb[0], rgb[1], rgb[2]]);
+                                    hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
+                                    innerLayer.style.borders[0].color = hex;
+                                }
                             }
                             // else if (layer.type === "Image")
                             else if (innerLayer.type === "SymbolInstance") {
@@ -259,8 +288,10 @@ function onChangeAndApply(items, webView) {
                                         else {
                                             if (innerLayer.type === "Group") {
                                                 innerLayer.layers.forEach((innerLayer2) => {
-
-                                                    if (innerLayer2.type === "ShapePath") {
+                                                    if (innerLayer2.type === "Group") { 
+                                                        apply(innerLayer2);
+                                                    }
+                                                    if (innerLayer2.type === "ShapePath"| innerLayer2.type === "Shape") {
                                                         if (innerLayer2.style.fills[0] != null) {
                                                             let rgb = HEXtoRGB(innerLayer2.style.fills[0].color);
                                                             let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
@@ -282,12 +313,18 @@ function onChangeAndApply(items, webView) {
                                                             let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
                                                             innerLayer2.style.textColor = hex;
                                                         }
+                                                        if (innerLayer2.style.borders[0] != null) {
+                                                            rgb = HEXtoRGB(innerLayer2.style.borders[0].color);
+                                                            result = filterFunction([rgb[0], rgb[1], rgb[2]]);
+                                                            hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
+                                                            innerLayer2.style.borders[0].color = hex;
+                                                        }
                                                     }
                                                     //else if (layer.type === "Image")
                                                 });
                                             }
                                             else {
-                                                if (innerLayer.type === "ShapePath") {
+                                                if (innerLayer.type === "ShapePath" || innerLayer.type === "Shape") {
                                                     if (innerLayer.style.fills[0] != null) {
                                                         let rgb = HEXtoRGB(innerLayer.style.fills[0].color);
                                                         let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
@@ -308,6 +345,12 @@ function onChangeAndApply(items, webView) {
                                                         let result = filterFunction([rgb[0], rgb[1], rgb[2]]);
                                                         let hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
                                                         innerLayer.style.textColor = hex;
+                                                    }
+                                                    if (innerLayer.style.borders[0] != null) {
+                                                        rgb = HEXtoRGB(innerLayer.style.borders[0].color);
+                                                        result = filterFunction([rgb[0], rgb[1], rgb[2]]);
+                                                        hex = rgbToHex(parseInt(result[0]), parseInt(result[1]), parseInt(result[2]));
+                                                        innerLayer.style.borders[0].color = hex;
                                                     }
                                                 }
                                                 //else if (layer.type === "Image")
@@ -487,6 +530,21 @@ function checkLayerAndFill(prevData, layer) {
             selected: layer.selected
         })
     }
+   else  if (layer.type === "Shape"){
+    if (layer.layers && layer.layers.length !== 0) {
+        layer.layers.forEach((innerLayer) => {
+            checkLayerAndFill(layers, innerLayer);
+        });
+    }
+        layers.push({
+            id: layer.id,
+            name: layer.name,
+            color: (layer.style.fills[0] == null ? "#ffffff" :  layer.style.fills[0].color),
+            type: "ShapePath",
+            textSize: "graphics",
+            selected: layer.selected
+        })
+     }
     return layers;
 }
 
