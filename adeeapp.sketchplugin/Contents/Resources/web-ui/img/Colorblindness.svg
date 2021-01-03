@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="13px" viewBox="0 0 28 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Colorblindness</title>
+    <g id="Icon/Colorblindness" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon---colorblindness">
+            <ellipse id="Oval" stroke="#979797" cx="14" cy="6.25" rx="14" ry="6.25"></ellipse>
+            <path d="M26.5916443,3.51475656 C24.3192473,1.43379228 19.5346894,0 14,0 C8.53788646,0 3.8063606,1.39643645 1.49904082,3.43322971" id="Path" stroke="#979797" fill="#4A535A"></path>
+            <path d="M10.2980005,2.27729569 C9.56818,3.14721644 9.12869637,4.26893082 9.12869637,5.4932921 C9.12869637,8.25842052 11.3702758,10.5 14.1354043,10.5 C16.9005327,10.5 19.1421122,8.25842052 19.1421122,5.4932921 C19.1421122,4.17293231 18.6310095,2.97194693 17.7958561,2.07738774" id="Path" stroke="#4A535A" fill="#4A535A"></path>
+            <line x1="18.875011" y1="3.53410054" x2="18.875011" y2="9.00996773" id="Line-3" stroke="#FFFFFF" stroke-width="0.2" stroke-linecap="square"></line>
+            <line x1="18.1296162" y1="3.53410054" x2="18.1296162" y2="9.84916778" id="Line-3-Copy" stroke="#FFFFFF" stroke-width="0.3" stroke-linecap="square"></line>
+            <line x1="17.3842215" y1="3.53410054" x2="17.3842215" y2="9.84916778" id="Line-3-Copy-2" stroke="#FFFFFF" stroke-width="0.4" stroke-linecap="square"></line>
+            <line x1="16.2902117" y1="3.53410054" x2="16.2902117" y2="10.754936" id="Line-3-Copy-3" stroke="#FFFFFF" stroke-width="0.5" stroke-linecap="square"></line>
+            <line x1="15.061383" y1="3.53410054" x2="15.061383" y2="10.754936" id="Line-3-Copy-4" stroke="#FFFFFF" stroke-width="0.7" stroke-linecap="square"></line>
+        </g>
+    </g>
+</svg>

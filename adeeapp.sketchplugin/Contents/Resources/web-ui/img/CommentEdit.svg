@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/CommentEdit</title>
+    <g id="Icon/CommentEdit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Comment-edit-icon" transform="translate(1.000000, 1.000000)">
+            <g id="Icon---Comment" stroke-linecap="round" stroke-linejoin="round" stroke="#1BBCB8">
+                <rect id="Rectangle" x="0" y="0" width="21.9871805" height="22" rx="1"></rect>
+            </g>
+            <path d="M3.59070395,14.2174976 L3.58969523,17.6786907 L7.66922868,16.1662259 C7.77279692,16.1278286 7.82562836,16.0127427 7.787231,15.9091745 C7.7672905,15.8553895 7.72521586,15.8127555 7.67169886,15.7921066 L3.59070395,14.2174976 L3.59070395,14.2174976 Z" id="Path" fill="#1BBCB8" fill-rule="nonzero" transform="translate(5.877334, 15.948094) rotate(-225.000000) translate(-5.877334, -15.948094) "></path>
+            <polyline id="Path" fill="#1BBCB8" fill-rule="nonzero" transform="translate(12.406131, 9.338430) rotate(-315.000000) translate(-12.406131, -9.338430) " points="10.6759396 10.7289356 10.6773332 15.5105333 14.1385262 15.511542 14.1371327 10.7299443 14.13634 8.01002246 14.1349284 3.16632605 10.6737353 3.16531733 10.6751469 8.00901374"></polyline>
+        </g>
+    </g>
+</svg>

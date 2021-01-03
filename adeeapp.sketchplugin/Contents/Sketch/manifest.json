@@ -1,0 +1,24 @@
+
+
+{
+  "name": "AdeeApp Sketch Plugin",
+  "identifier": "my.plugin",
+  "version": "0.1.0",
+  "disableCocoaScriptPreprocessor":true,
+  "description": "AdeeApp Sketch Plugin",
+  "authorEmail": "samine.hadadi@gmail.com",
+  "author": "AdeeApp",
+  "icon":"icon.png",
+
+  "commands": [{
+    "script": "index.js",
+    "handler" :"onRun",
+    "shortcut": "command shift d",
+    "name": "AdeeApp",
+    "identifier": "open"
+  }],
+  "menu" :{
+    "items":["open"],
+    "isRoot" : true
+  }
+}

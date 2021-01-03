@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="13px" viewBox="0 0 28 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Contrast</title>
+    <g id="Icon/Contrast" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon---Contrast" stroke="#979797">
+            <ellipse id="Oval" fill="#4A535A" cx="14" cy="6.25" rx="14" ry="6.25"></ellipse>
+            <path d="M14,0 C6.2680135,0 0,2.79822031 0,6.25 C0,9.70177969 6.2680135,12.5 14,12.5" id="Path" fill="#FFFCFC"></path>
+        </g>
+    </g>
+</svg>

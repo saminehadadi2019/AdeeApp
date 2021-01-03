@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Help</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Learn-more" transform="translate(-80.000000, -25.000000)">
+            <g id="Group" transform="translate(81.111400, 24.268817)">
+                <g transform="translate(0.000000, 0.000000)">
+                    <circle id="Oval" stroke="#1BBCB8" stroke-width="0.7" opacity="0.860444568" cx="6.59957384" cy="8.57944599" r="6.59957384"></circle>
+                    <text id="?" opacity="0.86" font-family="OpenSans-Bold, Open Sans" font-size="12" font-weight="bold" fill="#1BBCB8">
+                        <tspan x="3.87493782" y="13">?</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

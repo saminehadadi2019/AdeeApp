@@ -1,0 +1,1000 @@
+<!-- 
+/* Copyright (C) AdeeApp.com - All Rights Reserved
+ * Unauthorized copying of this file, via any medium is strictly prohibited
+ * Proprietary and confidential
+ * Written by Samine Hadadi <samine.hadadi@gmail.com>,  2020
+ */ 
+-->
+
+
+
+
+<!doctype html>
+<html>
+
+<head> 
+    <!-- release JT -->
+    <!--  <script src="./etc/mixcode.js"></script> -->
+    <script src="http://deetasker.com/adeerelease/skfr/etc/mixcode.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="choices.min.css">
+    <link rel="stylesheet" href="style.css?v=1.7">
+    <title>Adee(beta)</title>
+</head>
+
+<body onload="welcomeAdee()">
+<header>
+    <div class="header-container">
+        <div class="header-logo-wrapper ">
+            <strong class="version-text">Adee(beta)</strong>
+        </div>
+    </div>
+    <span class="close-btn" id="close-btn">&times</span>
+</header>
+
+
+<div class="d-flex">
+    <nav id="tabs" class="tab">
+        <button class="tablinks" onclick="openSection(event, 'colorcontrast')" id="defaultOpen">
+            <svg width="38px" height="38px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Color Contrast</title>
+                <g id="Ph2/Icon/Color/NotSelected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-5" transform="translate(5.015314, 11.162791)" stroke="#4A4A4A">
+                        <path d="M16.6647041,2.3917483 C17.9729672,1.28356262 19.6685224,0.615295157 21.5204022,0.615295157 C25.6741513,0.615295157 29.0414302,3.97735351 29.0414302,8.12466266 C29.0414302,12.2719718 25.6741513,15.6340302 21.5204022,15.6340302 C19.6685224,15.6340302 17.9729672,14.9657627 16.6624404,13.857577 M11.8067423,0.615295157 C13.6586221,0.615295157 15.3541773,1.28356262 16.6647041,2.3917483 C15.0334679,3.76921275 13.9993742,5.82636217 13.9993742,8.12466266 C13.9993742,10.4229631 15.0334679,12.4801126 16.6624404,13.857577 C15.3541773,14.9657627 13.6586221,15.6340302 11.8067423,15.6340302 C7.65299322,15.6340302 4.28571429,12.2719718 4.28571429,8.12466266 C4.28571429,3.97735351 7.65299322,0.615295157 11.8067423,0.615295157 Z"
+                              id="Shape"></path>
+                        <line x1="12.9551341" y1="0.0909079433" x2="12.9595818" y2="5.83765698" id="Path"
+                              stroke-width="0.8"
+                              transform="translate(12.957358, 2.964282) rotate(-43.000000) translate(-12.957358, -2.964282) "></line>
+                        <line x1="11.0517656" y1="-0.00307724336" x2="11.0583655" y2="8.52447909" id="Path"
+                              stroke-width="0.8"
+                              transform="translate(11.055066, 4.260701) rotate(-43.000000) translate(-11.055066, -4.260701) "></line>
+                        <line x1="12.8611273" y1="0.274527079" x2="9.55927769" y2="16.0772102" id="Path-18-Copy-11"
+                              stroke-width="0.8"
+                              transform="translate(11.210202, 8.175869) rotate(-43.000000) translate(-11.210202, -8.175869) "></line>
+                        <g id="Group-5-Copy"
+                           transform="translate(8.823360, 11.945693) rotate(-43.000000) translate(-8.823360, -11.945693) translate(4.537645, 4.100732)"
+                           stroke-width="0.8">
+                            <line x1="6.49583772" y1="0.602772256" x2="6.49583772" y2="14.5269645" id="Path"></line>
+                            <line x1="4.21906097" y1="1.25592842" x2="4.21906097" y2="13.145123" id="Path"></line>
+                            <line x1="1.94228423" y1="4.27040011" x2="1.94228423" y2="10.1535656" id="Path"></line>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <span class="tab-names">
+                Color Contrast
+        </span>
+        </button>
+        <button class="tablinks" onclick="openSection(event, 'colorblind')" id="colorblind-tab">
+            <svg width="38px" height="38px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Colorblind</title>
+                <g id="Ph2/Icon/Blind/NotSelected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-6" transform="translate(9.301028, 10.714286)" stroke="#4A4A4A">
+                        <g id="Group-3" transform="translate(0.000000, 0.524806)">
+                            <path d="M11.9331474,4.72871561e-14 C13.871569,4.72871561e-14 15.7011768,0.502157128 17.4219708,1.50647138 C17.8959678,2.39973912 18.164592,3.41755749 18.164592,4.49811641 C18.164592,8.02174895 15.3081234,10.8782175 11.7844909,10.8782175 C10.2135381,10.8782175 8.77519564,10.3104448 7.6634735,9.36890921 L7.46953803,9.1978325 C6.20005735,8.0316682 5.4043898,6.35781136 5.4043898,4.49811641 C5.4043898,3.52079571 5.62413653,2.59479961 6.0171569,1.76684195 C7.8619257,0.589042404 9.83371597,4.72871561e-14 11.9331474,4.72871561e-14 Z"
+                                  id="Combined-Shape"></path>
+                            <g id="Group-2">
+                                <path d="M7.54078787e-13,8.59801334 C3.38883094,2.86600445 7.39870413,3.14547992e-14 12.0296196,3.14547992e-14 C16.660535,3.14547992e-14 20.6704082,2.86600445 24.0592391,8.59801334"
+                                      id="Path-18"></path>
+                                <path d="M-1.47281013e-15,16.2765706 C3.38883094,10.5445617 7.39870413,7.67855727 12.0296196,7.67855727 C16.660535,7.67855727 20.6704082,10.5445617 24.0592391,16.2765706"
+                                      id="Path-18"
+                                      transform="translate(12.029620, 11.977564) scale(1, -1) translate(-12.029620, -11.977564) "></path>
+                            </g>
+                        </g>
+                        <line x1="16.3292607" y1="2.0190641" x2="16.3292607" y2="9.9199241" id="Path-18-Copy-6"
+                              stroke-width="0.8"></line>
+                        <line x1="14.0524839" y1="0.560415359" x2="14.0524839" y2="10.4726105" id="Path-18-Copy-7"
+                              stroke-width="0.8"></line>
+                        <line x1="11.7757072" y1="0.342099994" x2="11.7757072" y2="11.7021883" id="Path-18-Copy-8"
+                              stroke-width="0.8"></line>
+                    </g>
+                </g>
+            </svg>
+            <span class="tab-names">
+                Colorblind
+            </span>
+        </button>
+        <!-- <svg width="38px" height="38px" viewBox="0 0 40 40" -->
+        <button class="tablinks" onclick="openSection(event, 'touch')" id="touch-tab" style="visibility: hidden">
+            <svg width="0px" height="0px" viewBox="0 0 0 0" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Touch</title>
+                <g id="Ph2/Icon/Touch/NotSelected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"
+                   stroke-linecap="round" stroke-linejoin="round">
+                    <g id="Group" transform="translate(6.443885, 7.142857)" stroke="#4A4A4A">
+                        <g id="Icon/Touch-Copy" transform="translate(7.492339, 6.161620)" stroke-width="0.99">
+                            <g id="Group-2" transform="translate(0.054842, 0.785512)">
+                                <path d="M8.0238632,11.7102164 L0.386514285,3.97088191 C-0.128838095,3.06330584 -0.128838095,2.30017882 0.386514285,1.68150084 C0.901866665,1.06282286 1.62671931,1.06282286 2.56107222,1.68150084 L7.70005718,7.12186889"
+                                      id="Path-3"></path>
+                                <path d="M5.36148051,4.29527903 C5.21626818,2.50962989 5.99445042,1.9144135 7.69602723,2.50962989"
+                                      id="Path-4"></path>
+                                <polyline id="Path-5"
+                                          points="7.66119745 2.58380515 8.07097823 2.99950762 10.0128712 4.96946259"></polyline>
+                                <path d="M12.282517,2.91938465 L10.8280604,1.42096074 C10.158259,1.08220085 9.56523244,1.08220085 9.04898062,1.42096074 C8.53272879,1.75972062 8.29425437,2.36275569 8.33355735,3.23006592"
+                                      id="Path-6"></path>
+                                <path d="M11.6527468,2.06063477 C11.4527431,0.482904957 12.1528631,-0.165477911 13.753107,0.115486167"
+                                      id="Path-7"></path>
+                                <line x1="13.8430011" y1="0.186360254" x2="18.7145625" y2="5.72052021"
+                                      id="Path-8"></line>
+                                <path d="M18.7145625,5.72052021 C19.9632717,8.37797479 19.9632717,10.3745402 18.7145625,11.7102164 C17.4658534,13.0458926 16.4367391,14.0857465 15.6272199,14.8297783 C14.5535544,15.499281 13.0695276,15.8340324 11.1751395,15.8340324 C9.2807514,15.8340324 6.7083602,15.8340324 3.45796589,15.8340324 C1.71873308,15.795859 1.02265402,15.2350735 1.36972869,14.1516761 C1.71680336,13.0682786 2.59753766,12.5200778 4.0119316,12.5070736 L8.21073113,11.9001626"
+                                      id="Path-2"></path>
+                            </g>
+                        </g>
+                        <path d="M9.61562966,4.3838071 C7.49795383,4.3838071 5.78123838,6.10052255 5.78123838,8.21819838 C5.78123838,10.3358742 7.49795383,12.0525897 9.61562966,12.0525897"
+                              id="Path" stroke-width="0.8"
+                              transform="translate(7.698434, 8.218198) rotate(50.000000) translate(-7.698434, -8.218198) "></path>
+                        <path d="M9.27200239,1.30554978 C6.31432257,1.30554978 3.91664934,3.84899922 3.91664934,6.9865031 C3.91664934,10.124007 6.31432257,12.6674564 9.27200239,12.6674564"
+                              id="Path" stroke-width="0.8"
+                              transform="translate(6.594326, 6.986503) rotate(50.000000) translate(-6.594326, -6.986503) "></path>
+                    </g>
+                </g>
+            </svg>
+            <span class="tab-names">
+                TOUCH
+            </span>
+        </button>
+        <button id="report-btn-navbar" class="tablinks" onclick="openSection(event, 'report')">
+            <svg width="38px" height="38px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Share</title>
+                <g id="Ph2/Icon/Report/NotSelected" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Group-7" transform="translate(12.158171, 9.285714)" stroke="#4A4A4A">
+                        <g id="Group-5-Copy-2"
+                           transform="translate(10.752941, 12.317855) rotate(-90.000000) translate(-10.752941, -12.317855) translate(6.467227, 5.174998)"
+                           stroke-width="0.8">
+                            <line x1="5.33718932" y1="2.29365723" x2="5.33718932" y2="12.460264" id="Path"></line>
+                            <line x1="7.28107264" y1="8.20736008" x2="7.28107264" y2="12.460264"
+                                  id="Path-Copy-2"></line>
+                            <line x1="3.39330601" y1="2.29365723" x2="3.39330601" y2="12.460264" id="Path"></line>
+                            <line x1="1.44942269" y1="2.29365723" x2="1.44942269" y2="12.460264" id="Path"></line>
+                        </g>
+                        <path d="M13.5791823,-4.33323172e-15 C14.1314671,-3.45362999e-15 14.5791823,0.44771525 14.5791823,1 L14.579,3.036 L17.0887902,3.03662068 C17.6410749,3.03662068 18.0887902,3.48433593 18.0887902,4.03662068 L18.0887902,19.7058098 C18.0887902,20.2580945 17.6410749,20.7058098 17.0887902,20.7058098 L4.50960783,20.7058098 C3.95732309,20.7058098 3.50960783,20.2580945 3.50960783,19.7058098 L3.509,18.405 L1,18.4051643 C0.44771525,18.4051643 -1.57012015e-13,17.957449 -1.5707965e-13,17.4051643 L-1.5707965e-13,1 C-1.57147285e-13,0.44771525 0.44771525,-4.23177866e-15 1,-4.33323172e-15 L13.5791823,-4.33323172e-15 Z"
+                              id="Combined-Shape"></path>
+                        <path d="M15.2602743,3.03662068 L8.31003734,3.03662068 M3.50960783,7.73338935 C3.50960783,6.65304176 3.50960783,10.2110316 3.50960783,18.4073589"
+                              id="Shape"></path>
+                        <polygon id="Path-12" stroke-linejoin="round"
+                                 points="8.26400267 3.05498025 3.55499445 7.39124906 8.26400267 7.39124906"></polygon>
+                    </g>
+                </g>
+            </svg>
+            <span class="tab-names">
+                Share
+        </span>
+            <span id="new-report" class="new-report"></span>
+        </button>
+        <button id="feedback-btn-navbar" class="tablinks" onclick="feedbackClicked()">
+            <svg width="38px" height="38px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>FeedBack</title>
+                <g id="Ph2/Icon/feedback" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M16.9818332,28.1010932 C18.1353864,28.5162733 19.379112,28.7425273 20.6756821,28.7425273 C26.6989826,28.7425273 31.5818323,23.8596775 31.5818323,17.8363771 C31.5818323,11.8130766 26.6989826,6.93022687 20.6756821,6.93022687 C14.6523817,6.93022687 9.7695319,11.8130766 9.7695319,17.8363771 C9.7695319,20.3122102 10.5945188,22.5953574 11.98459,24.4259159 M16.9378851,28.0978363 L8.94041505,30.994778 L11.8488561,25.4642379 C11.9627586,25.2624618 12.0263507,25.0972349 12.0396324,24.9685574 C12.0529142,24.8398799 12.0269346,24.6407042 11.9616938,24.3710303"
+                          id="Combined-Shape" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round"
+                          transform="translate(20.261124, 18.962502) rotate(7.000000) translate(-20.261124, -18.962502) "></path>
+                    <path d="M23.4481283,14.142482 C25.0154246,14.142482 26.2859693,15.4130267 26.2859693,16.980323 C26.2859693,17.7929952 25.9443688,18.5258823 25.396924,19.0432282 L25.3508349,19.0841969 L25.3508349,19.0841969 L25.2714817,19.1816569 L21.7300199,23.0185271 C21.7212215,23.0280593 21.7122385,23.0374195 21.7030759,23.0466023 C21.3129818,23.4375562 20.6798172,23.4382532 20.2888632,23.0481591 L20.2888632,23.0481591 L16.5593772,19.3268751 C16.5400798,19.3076201 16.5216483,19.2876566 16.5041084,19.267045 C15.8042524,18.7500375 15.3491635,17.9183261 15.3491635,16.980323 C15.3491635,15.4130267 16.6197082,14.142482 18.1870046,14.142482 C19.3777526,14.142482 20.3972112,14.8758593 20.818336,15.9155696 C21.2379216,14.8758593 22.2573802,14.142482 23.4481283,14.142482 Z"
+                          id="Combined-Shape" fill="#FFFFFF"></path>
+                </g>
+            </svg>
+            <span class="tab-names">
+                IMAGE
+            </span>
+        </button>
+    </nav>
+    <article>
+        <div id="colorcontrast" class="tabcontent">
+            <div class="d-flex">
+                <div class="sidenav">
+                    <!-- Rectangular switch -->
+                    <div id="color-contrast" class="color-contrast toggle-content">
+                        <strong class="tab-title">Color Contrast</strong>
+                        <div>
+                            <p class="select-layer-text">Select forground layer:</p>
+                            <select class="select-options" onchange="changeDropdownItem(this,'f')" id="f-options">
+                                <option value="" disabled selected>foreground layer</option>
+                            </select>
+                            <div class="color-mode-container">
+                                <span class="textbox">
+                                    #
+                                    <input disabled oninput="changeInputColor(this.value,'f')" id="f-color" type="text"
+                                           placeholder="ff ff ff" maxlength="6">
+                                </span>
+                                <div onclick="colorPickerClicked('f')" id="f-colorpicker" class="colorpicker">
+                                </div>
+                                <div class="refresh-btn">
+                                    <img id="f-reset" src="./img/refresh.svg" alt="">
+                                </div>
+
+                            </div>
+                            <div>
+                                <p class="select-layer-text">Lightness</p>
+                                <input disabled id="f-color-slider" type="range" min="1" max="99" value="50" step="1"
+                                       oninput="changeSlider(this.value,'f')">
+                            </div>
+                        </div>
+
+                        <div class="center swipe-btn-container">
+                            <img class="swipe-image" height="15" onclick="swipeLayers()" src="./img/Swipe.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="select-layer-text">Select Background Layer:</p>
+                            <select class="select-options" onchange="changeDropdownItem(this,'b')" id="b-options">
+                                <option value="" disabled selected>background layer</option>
+                            </select>
+
+                            <div class="color-mode-container">
+                                <span class="textbox">
+                                    #
+                                    <input disabled oninput="changeInputColor(this.value,'b')" id="b-color" type="text"
+                                           placeholder="ff ff ff" maxlength="6" >
+                                </span>
+                                <div onclick="colorPickerClicked('b')"  id="b-colorpicker" class="colorpicker">
+                                </div>
+                                <div class="refresh-btn">
+                                    <img id="b-reset" src="./img/refresh.svg" alt="">
+                                </div>
+
+                            </div>
+                            <div>
+                                <p class="select-layer-text">Lightness</p>
+                                <input disabled id="b-color-slider" type="range" min="1" max="99" value="50" step="1"
+                                       oninput="changeSlider(this.value,'b')">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="color-main main">
+                    <div id="color-main" class="content color-contrast toggle-content">
+
+                        <div class="mar-bot-10">
+                            <a id="howitworks-contrast" class="how-work-link" href="https://www.adeeapp.com/post/contrast" onclick="howitworksContrast()" target="_blank">How it works?</a>
+                        </div>
+                        <div>
+                            <div class="color-capture" id="color-capture">
+                                <div class="d-flex mar-bot-20">
+                                    <div class="rectangle-container">
+                                        <div id="f-container" class="rectangle-layers"></div>
+                                        <div id="b-container" class="rectangle-layers"></div>
+                                    </div>
+
+                                    <div class="ratio-container">
+                                        <div class="ratio-result" id="ratio-result">
+                                            <span class="ratio-status" id="ratio-status"></span>
+                                            <div class="ratio-status-container">
+                                                <span id="ratio-a">A</span>
+                                                <span id="ratio-aa">A</span>
+                                                <span id="ratio-aaa">A</span>
+                                            </div>
+                                        </div>
+                                        <!--p class="contrast-ratio-text">Contrast Ratio</p-->
+                                        <div id="contrast-ratio" class="contrast-ratio"></div>
+                                    </div>
+                                </div>
+
+
+                                <table class="result-table table-responsive no-header">
+                                    <tr>
+                                        <td id="normalText">Normal text</td>
+                                        <td data-label="AA" id="normal-aa"></td>
+                                        <td data-label="AAA" id="normal-aaa"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="largeText">Large text (18.66px bold / 24px regular)</td>
+                                        <td class="checked" data-label="AA" id="large-aa"></td>
+                                        <td class="unchecked" data-label="AAA" id="large-aaa"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="graphics">Graphics</td>
+                                        <td data-label="AA" id="graphics-aa"></td>
+                                        <td data-label="AAA" id="graphics-aaa"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="comment-wrapper">
+                                <div class="comment-container    disabled" id="comment-disable">
+                                    <a href="#!" class="comment-btn margin-bet" data-id="comment-input" id="contrast-comment" >
+                                        <img class="comment-img"  src="./img/Comment.svg" alt="comment"><p class="comment-text">COMMENT</p>
+                                    </a>
+                                </div>
+                                <div class="comment-box" >
+                                    <textarea maxlength=200 name="comment" id="comment-input" cols="35" rows="2"></textarea>
+                                    <button class="outline-btn  comment-btn-save">
+                                        <p class="btn-text">
+                                            Save
+                                        </p>
+                                    </button>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="btn-container">
+                                <button id="apply-btn" class="apply-btn">
+                                    <p class="apply-btn-text">
+                                        Apply changes
+                                    </p>
+                                </button>
+
+                                <button id="report-btn" class="report-btn">
+                                    <p class="report-btn-text">
+                                        Add to report
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colorpicker-popup-modal" id="colorpicker-modal">
+                        <div class="colorpicker-container">
+                            <div class="colorpicker-wrapper">
+                                <div id="picker"></div>
+                                <span class="textbox">#<input placeholder="ff 00 ff" id="colorpicker-input" type="text" class="colorpicker-input" maxlength="6"></span>
+                            </div>
+                            <div class="global-colors-wrapper" >
+                                <div id="global-colors" class="global-colors" onclick = "globalColorClicked(this)">
+                                    <span   class="global-color-span" data-color="#ff0000" style="background-color: #ff0000"></span><span class="global-color-span" data-color="#e8ff4d" style="background-color: #e8ff4d"></span><span class="global-color-span" data-color="#ff78ef" style="background-color: #ff78ef"></span><span class="global-color-span" data-color="#9162ff" style="background-color: #9162ff"></span><span class="global-color-span" data-color="red" style="background-color: red"></span><span class="global-color-span" data-color="red" style="background-color: red"></span><span class="global-color-span" data-color="red" style="background-color: red"></span><span class="global-color-span" data-color="red" style="background-color: red"></span><span class="global-color-span" data-color="red" style="background-color: red"></span><span class="global-color-span" data-color="red" style="background-color: red"></span><span class="global-color-span" data-color="red" style="background-color: red"></span><span class="global-color-span" data-color="red" style="background-color: red"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="colorblind" class="tabcontent">
+            <div class="d-flex">
+                <div class="sidenav">
+                    <strong class="tab-title">Colorblind</strong>
+                    <div class="color-blind  toggle-content " id="color-blind">
+
+                        <div>
+                            <p class="select-layer-text">Select artboard:</p>
+                            <select onchange="changeArtboardDropdown(this)" id="colorblind-options"
+                                    class="select-options">
+                                <option value="" disabled selected>Select artboard</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p class="select-layer-text">Colorblind Mode:</p>
+                            <select disabled onchange="changeArtboardMode(this)" id="colorblind-modes"
+                                    class="select-options">
+                                <option value="" disabled selected>Select colorblind mode</option>
+                                <option value="Normal">Normal</option>
+                                <option value="Deuteranopia">Deuteranopia</option>
+                                <option value="Deuteranomaly">Deuteranomaly</option>
+                                <option value="Protanopia">Protanopia</option>
+                                <option value="Protanomaly">Protanomaly</option>
+                                <option value="Tritanopia">Tritanopia</option>
+                                <option value="Tritanomaly">Tritanomaly</option>
+                                <option value="Achromatopsia">Achromatopsia</option>
+                                <option value="Achromatomaly">Achromatomaly</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="color-main main">
+                    <div id="color-blind-main" class="content color-blind toggle-content">
+                        <div class="mar-bot-10">
+                            <a id="howitworks-colorblind" class="how-work-link" href="https://www.adeeapp.com/post/colorblind" onclick="howitworksColorblind()" target="_blank">How it works?</a>
+                        </div>
+                        <div class="">
+
+                            <div class="">
+                                <div class="img-comp-wrapper">
+                                    <div  class="color-blind-main-artboard img-comp-container">
+                                        <span id="colorblind-normal-view" class="colorblind-normal-view  hide">
+                                            <span class="normal-view-text hide">NORMAL VIEW</span>
+                                        </span>
+                                        <div id="color-blind-second-artboard" class="img-comp-img ">
+
+                                            <!--img  src="data:image/png;base64,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"  >
+                                            < -->
+                                        </div>
+                                        <span id="colorblind-filtered-view" class="colorblind-normal-view hide ">
+                                            <span id="colorblind-filter-name" class="normal-view-text hide">NORMAL VIEW</span>
+                                        </span>
+                                        <div id="color-blind-main-artboard" class="img-comp-img img-comp-overlay">
+
+                                            <!--img  src="data:image/png;base64,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" width="250" height="183" >
+                                            < -->
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div id="zoom-options-wrapper" class="zoom-options-wrapper hide">
+                                    <div class="input-group">
+                                        <input id="zoom_plus" data-target="percent" type="button" value="+"
+                                               class="button-plus">
+                                        <input id="percent" type="number" step="1" min="100" max="300" value="100"
+                                               class="percent-field" disabled autocomplete="off"
+                                               onchange="inputPercent(this)">
+                                        <span class="percent">%</span>
+                                        <input id="zoom_minus" data-target="percent" type="button" value="-"
+                                               class="button-minus">
+                                    </div>
+                                </div>
+                                <!--div id="colorblind-filtered-view" class="colorblind-normal-view ">
+                                    <span id="colorblind-filter-name" class="normal-view-text">
+                                        NORMAL VIEW
+                                    </span>
+                                </div>
+                                <div id="color-blind-main-artboard" class="color-blind-main-artboard ">
+                                </div>
+                                <div id="colorblind-normal-view"  class="colorblind-normal-view  ">
+                                    <span class="normal-view-text">
+                                        NORMAL VIEW
+                                    </span>
+                                </div>
+                                <div id="color-blind-second-artboard" >
+                                </div-->
+                                <div>
+                                    <div class="colorblind-mode-outer" id="colorblind-mode-single">
+                                        <span id="colorblind-single-inner" class="colorblind-single-inner"></span>
+                                    </div>
+                                    <div class="colorblind-mode-outer" id="colorblind-mode-double">
+                                        <div class="colorblind-double-center">
+                                            <span class="colorblind-double-inner"></span>
+                                            <span class="colorblind-double-inner"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="comment-wrapper">
+                                <div class="comment-container ">
+                                    <a href="#!" class="comment-btn margin-bet" data-id="comment-input-blind" id="comment-colorblind">
+                                        <img  class="comment-img" src="./img/Comment.svg" alt="comment"><p class="comment-text">COMMENT</p>
+                                    </a>
+                                </div>
+                                <div class="comment-box">
+                                    <textarea id="comment-input-blind" maxlength=200 name="comment" cols="35"
+                                              rows="2"></textarea>
+                                    <button class="outline-btn  comment-btn-save">
+                                        <p class="btn-text">
+                                            Save
+                                        </p>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="btn-container">
+                                <button id="color-blind-generate" class="apply-btn">
+                                    <p class="apply-btn-text">
+                                        Generate
+                                    </p>
+                                </button>
+                                <button id="color-blind-add-report" class="report-btn">
+                                    <p class="report-btn-text">
+                                        Add to report
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="touch" class="tabcontent">
+            <div class="d-flex">
+                <div class="sidenav">
+                    <strong class="tab-title">Touch Target Size</strong>
+                    <div class="toggle-content touch-content">
+                        <div class="input-field ">
+                            <p class="select-layer-text">
+                                Select artboard:
+                            </p>
+                            <select id="artboard-option" onchange="changeArtboardDropdown(this)" >
+                                <option value="" disabled>Select Artboard</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <p class="select-layer-text">
+                                Select touch target:
+                            </p>
+                            <select id="touchtarget" name="touchtarget" multiple>
+                                <option value="">Select touch target</option>
+                            </select>
+                        </div>
+                        <div class="input-field ">
+                            <p class="select-layer-text">
+                                Criteria:
+                            </p>
+                        </div>
+                        <div class="input-field">
+                            <label class="checkbox-container" for="ch-apple-device">
+                                Apple device
+                                <input class="toggle-column" data-item="apple-column" id="ch-apple-device"
+                                       type="checkbox"
+                                       name="ch-apple-device" checked/>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="input-field">
+                            <label class="checkbox-container " for="ch-android-device">
+                                Android device
+                                <input class="toggle-column" data-item="android-column" id="ch-android-device"
+                                       type="checkbox"
+                                       name="ch-android-device" checked/>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="input-field">
+                            <label class="checkbox-container" for="ch-wcag-device">
+                                WCAG device
+                                <input class="toggle-column" data-item="wcag-column" id="ch-wcag-device" type="checkbox"
+                                       name="ch-wcag-device" checked/>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="input-field">
+                            <label class="checkbox-container" for="ch-nielsen-device">
+                                Nielsen device
+                                <input class="toggle-column" data-item="nielsen-column" id="ch-nielsen-device"
+                                       type="checkbox"
+                                       name="ch-nielsen-device" checked/>
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="touch-main main">
+                    <div class="content touch-content toggle-content ">
+                        <div class="mar-bot-10">
+                            <a id="howitworks-touch" class="how-work-link" href="https://www.adeeapp.com/post/push-button"  onclick="howitworksTouch()" target="_blank">How it works?</a>
+                        </div>
+
+                        <table border="1" class="mar-bot-20 table-transparent table-responsive table-touch">
+                            <thead>
+                            <tr>
+                                <th class="center-align">TARGET OBJECT</th>
+                                <th class="center-align removable-columns apple-column  ">APPLE</th>
+                                <th class="center-align removable-columns android-column">ANDROID</th>
+                                <th class="center-align removable-columns nielsen-column  ">NIELSEN</th>
+                                <th class="center-align removable-columns wcag-column">WCAG</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="column-object-name ">
+                                    <p class=" object-name">Submit-button1</p>
+                                    <div class="size-panel-wrapper margin-bet d-flex hide">
+                                        <div class="size-panel">
+                                            <div class="input-control">
+                                                <span class="title">H</span>
+                                                <label>
+                                                    <input type="number" value=""/>
+                                                    <span class="prefix">px</span>
+                                                </label>
+                                                <button>
+                                                    <img src="./img/Refresh-active.svg" alt="refresh">
+                                                </button>
+                                            </div>
+                                            <div class="controls">
+                                                <button class="minus-btn">
+                                                    <img src="./img/left.svg" alt="" width="10">
+                                                </button>
+                                                <button class="plus-btn">
+                                                    <img src="./img/right.svg" alt="" width="10">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="size-panel">
+                                            <div class="input-control">
+                                                <span class="title">W</span>
+                                                <label>
+                                                    <input type="number" value=""/>
+                                                    <span class="prefix">px</span>
+                                                </label>
+                                                <button>
+                                                    <img src="./img/Refresh-active.svg" alt="refresh">
+                                                </button>
+                                            </div>
+                                            <div class="controls">
+                                                <button class="minus-btn">
+                                                    <img src="./img/left.svg" alt="" width="10">
+                                                </button>
+                                                <button class="plus-btn">
+                                                    <img src="./img/right.svg" alt="" width="10">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-label="APPLE" class="center-align removable-columns apple-column">
+                                    <div class="margin-bet">
+                                                <span class="no-support">
+                                                    XH
+                                                </span>
+                                        <span class="minimal-support">
+                                                    W
+                                                </span>
+                                        <span class="minimum-support">
+                                                    Minimum 00 px
+                                                </span>
+                                    </div>
+
+                                </td>
+                                <td data-label="ANDROID" class="center-align removable-columns android-column">
+                                    <div class="all-support">
+                                    </div>
+                                </td>
+                                <td data-label="NIELSEN" class="center-align nielsen-column">
+                                    <div class="margin-bet">
+                                                <span class="no-support">
+                                                    XH
+                                                </span>
+                                        <span class="minimal-support">
+                                                    H
+                                                </span>
+                                        <span class="minimum-support">
+                                                    Minimum 00 px
+                                                </span>
+                                    </div>
+
+                                </td>
+                                <td data-label="WCAG" class="center-align wcag-column">
+                                    <div class="margin-bet">
+                                                <span class="no-support">
+                                                    XH
+                                                </span>
+                                        <span class="no-support">
+                                                        XW
+                                                </span>
+                                        <span class="minimum-support">
+                                                    Minimum 00 px
+                                                </span>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column-object-name ">
+                                    <p class="object-name">Submit-button1</p>
+                                    <div class="size-panel-wrapper margin-bet d-flex hide">
+                                        <div class="size-panel">
+                                            <div class="input-control">
+                                                <span class="title">H</span>
+                                                <label>
+                                                    <input type="number" value=""/>
+                                                    <span class="prefix">px</span>
+                                                </label>
+                                                <button>
+                                                    <img src="./img/Refresh-active.svg" alt="refresh">
+                                                </button>
+                                            </div>
+                                            <div class="controls">
+                                                <button class="minus-btn">
+                                                    <img src="./img/left.svg" alt="" width="10">
+                                                </button>
+                                                <button class="plus-btn">
+                                                    <img src="./img/right.svg" alt="" width="10">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="size-panel">
+                                            <div class="input-control">
+                                                <span class="title">W</span>
+                                                <label>
+                                                    <input type="number" value=""/>
+                                                    <span class="prefix">px</span>
+                                                </label>
+                                                <button>
+                                                    <img src="./img/Refresh-active.svg" alt="refresh">
+                                                </button>
+                                            </div>
+                                            <div class="controls">
+                                                <button class="minus-btn">
+                                                    <img src="./img/left.svg" alt="" width="10">
+                                                </button>
+                                                <button class="plus-btn">
+                                                    <img src="./img/right.svg" alt="" width="10">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-label="APPLE" class="center-align removable-columns apple-column">
+                                    <div class="margin-bet">
+                                                <span class="no-support">
+                                                    XH
+                                                </span>
+                                        <span class="minimal-support">
+                                                    W
+                                                </span>
+                                        <span class="minimum-support">
+                                                Minimum 00 px
+                                            </span>
+                                    </div>
+
+                                </td>
+                                <td data-label="ANDROID" class="center-align removable-columns android-column">
+                                    <div class="all-support">
+                                    </div>
+                                </td>
+                                <td data-label="NIELSEN" class="center-align nielsen-column ">
+                                    <div class="margin-bet">
+                                                <span class="no-support">
+                                                    XH
+                                                </span>
+                                        <span class="minimal-support">
+                                                    H
+                                                </span>
+                                        <span class="minimum-support">
+                                                Minimum 00 px
+                                            </span>
+                                    </div>
+
+                                </td>
+                                <td data-label="WCAG" class="center-align wcag-column">
+                                    <div class="margin-bet">
+                                                <span class="no-support">
+                                                    XH
+                                                </span>
+                                        <span class="no-support">
+                                                    XW
+                                                </span>
+                                        <span class="minimum-support">
+                                                Minimum 00 px
+                                            </span>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="column-object-name ">
+                                    <p class=" object-name">Submit-button1</p>
+                                    <div class="size-panel-wrapper margin-bet d-flex hide">
+                                        <div class="size-panel">
+                                            <div class="input-control">
+                                                <span class="title">H</span>
+                                                <label>
+                                                    <input type="number" value=""/>
+                                                    <span class="prefix">px</span>
+                                                </label>
+                                                <button>
+                                                    <img src="./img/Refresh-active.svg" alt="refresh">
+                                                </button>
+                                            </div>
+                                            <div class="controls">
+                                                <button class="minus-btn">
+                                                    <img src="./img/left.svg" alt="" width="10">
+                                                </button>
+                                                <button class="plus-btn">
+                                                    <img src="./img/right.svg" alt="" width="10">
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="size-panel">
+                                            <div class="input-control">
+                                                <span class="title">W</span>
+                                                <label>
+                                                    <input type="number" value=""/>
+                                                    <span class="prefix">px</span>
+                                                </label>
+                                                <button>
+                                                    <img src="./img/Refresh-active.svg" alt="refresh">
+                                                </button>
+                                            </div>
+                                            <div class="controls">
+                                                <button class="minus-btn">
+                                                    <img src="./img/left.svg" alt="" width="10">
+                                                </button>
+                                                <button class="plus-btn">
+                                                    <img src="./img/right.svg" alt="" width="10">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-label="APPLE" class="center-align removable-columns apple-column">
+                                    <div class="margin-bet">
+                                                <span class="no-support">
+                                                    XH
+                                                </span>
+                                        <span class="minimal-support">
+                                                    W
+                                                </span>
+                                        <span class="minimum-support">
+                                                Minimum 00 px
+                                            </span>
+                                    </div>
+
+                                </td>
+                                <td data-label="ANDROID" class="center-align removable-columns android-column">
+                                    <div class="all-support">
+                                    </div>
+                                </td>
+                                <td data-label="NIELSEN" class="center-align nielsen-column ">
+                                    <div class="margin-bet">
+                                                <span class="no-support">
+                                                    XH
+                                                </span>
+                                        <span class="minimal-support">
+                                                    H
+                                                </span>
+                                        <span class="minimum-support">
+                                                Minimum 00 px
+                                            </span>
+                                    </div>
+
+                                </td>
+                                <td data-label="WCAG" class="center-align wcag-column">
+                                    <div class="margin-bet">
+                                                <span class="no-support">
+                                                    XH
+                                                </span>
+                                        <span class="no-support">
+                                                    XW
+                                                </span>
+                                        <span class="minimum-support">
+                                                Minimum 00 px
+                                            </span>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="comment-wrapper">
+                            <div class="comment-container ">
+                                <a href="#!" class="comment-btn margin-bet" data-id="comment-touch">
+                                    <img class="comment-img"  src="./img/Comment.svg"
+                                          alt="comment"><p class="comment-text">COMMENT</p>
+                                </a>
+
+                            </div>
+                            <div class="comment-box  ">
+                            <textarea maxlength=200 name="comment" id="comment-touch" cols="35" rows="2"></textarea>
+                                <button class="outline-btn  comment-btn-save">
+                                    <p class="btn-text">
+                                        Save
+                                    </p>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="btn-container">
+                            <button class="apply-btn ">
+                                <p class="edit-btn-text ">
+                                    Edit target size
+                                </p>
+                                <p class="apply-btn-text hide">
+                                    Apply change
+                                </p>
+                            </button>
+                            <button class="report-btn">
+                                <p class="report-btn-text">
+                                    Add to report
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content spacing-content toggle-content  hide ">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="report" class="tabcontent">
+            <div class="report-main main ">
+                <div class="content">
+                    <div class="report-container">
+                        <strong class="tab-title">Share</strong>
+                        <div id="report-header-container" class="report-header-container">
+                            <label class="checkbox-container">
+                                <p class="label-text">Add header</p>
+                                <input id="report-header-check" type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="report-header">
+                                <p class="report-header-btn-text">
+                                    Accessibility Report
+                                </p>
+                                <div class="form-group-header">
+                                    <label>By:</label>
+                                    <input id="report-header-input-by" class="report-header-input" type="text"
+                                           placeholder="Author name"/>
+                                </div>
+
+                                <div class="form-group-header">
+                                    <label>Date:</label>
+                                    <input id="report-header-input-date" class="report-header-input" type="text"
+                                           placeholder="DD/MM/YY"/>
+                                </div>
+
+                            </div>
+                        </div>
+                        <label class="checkbox-container">
+                            <p class="label-text">Color Contrast</p>
+                            <input id="report-color-contrast-check" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="reports-container" id="reports-container-report">
+
+                        </div>
+                        <label class="checkbox-container">
+                            <p class="label-text">Color Blind</p>
+                            <input id="report-color-blind-check" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="reports-container" id="reports-container-blind">
+
+                        </div>
+                        <div class="right-align">
+                            <button id="delete-all-reports" class="delete-all-btn apply-btn">
+                                <p class="apply-btn-text">
+                                    Delete All
+                                </p>
+                            </button>
+                            <button class="pdf-btn apply-btn black-btn" onclick="generatePDF()" id="report-generate">
+                                <p class="apply-btn-text">
+                                    Generate
+                                </p>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="report-zoom-modal" id="report-zoom-modal">
+
+                        <div class="report-zoom-container">
+                            <div class="report-zoom-modal-header">
+                                <span id="report-zoom-close-btn" class="report-zoom-close-btn">&times;</span>
+                            </div>
+                            <div class="report-zoom-modal-main">
+                                <p id="report-zoom-title" class="report-zoom-title">COLOR CONTRAST</p>
+                                <img id="report-zoom-image" src="" alt="report-zoom" class="report-zoom-image">
+                                <p id="report-zoom-comment" class="report-zoom-comment"></p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</div>
+
+<!-- release JT -->
+
+<script src="./plugins/choices.min.js"></script>
+<script src="./plugins/jspdf.min.js"></script>
+<script src="./plugins/html2canavas.js"></script>
+<script src="./plugins/colorPicker.js"></script>
+<script src="./plugins/tinymce/tinymce.min.js"></script>
+
+
+<!-- <script src="./etc/zoom.js"></script>
+<script src="./etc/color.js"></script> 
+<script src="./etc/colorblind.js"></script>
+<script src="./etc/imageComparison.js"></script>
+<script src="./etc/script.js"></script> 
+script src="./etc/mixpanel.js"></script> 
+<script src="./etc/expofuncs.js"></script> -->
+
+<!-- <script src="./etc/zoom.min.js"></script>
+<script src="./etc/color.min.js"></script> 
+<script src="./etc/colorblind.min.js"></script>
+<script src="./etc/imageComparison.min.js"></script>
+<script src="./etc/script.min.js"></script>
+<script src="./etc/mixpanel.js"></script> 
+<script src="./etc/expofuncs.js"></script> -->
+
+<script src="https://deetasker.com/adeerelease/skfr/etc/zoom.min.js"></script>
+<script src="https://deetasker.com/adeerelease/skfr/etc/color.min.js"></script>
+<script src="https://deetasker.com/adeerelease/skfr/etc/colorblind.min.js"></script>
+<script src="https://deetasker.com/adeerelease/skfr/etc/imageComparison.min.js"></script>
+<script src="https://deetasker.com/adeerelease/skfr/etc/script.min.js"></script>
+<script src="https://deetasker.com/adeerelease/skfr/etc/mixpanel.js"></script> 
+<script src="https://deetasker.com/adeerelease/skfr/etc/expofuncs.js"></script>
+
+
+</body>
+
+</html>

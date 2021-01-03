@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>AdeeApp</title>
+    <link>https://rappcast.xml</link>
+    <description>The most Comprehensive Free Accessibility Testing Tool for Inclusive Design!</description>
+    <language>en</language>
+    <item>
+      <title>Version 0.1.0</title>
+      <description>
+        <![CDATA[
+          <ul>
+            <li>Beta release</li>
+            <li>Includes: color contrast, color blind and reporting tools</li>
+          </ul>
+        ]]>
+      </description>
+      <pubDate>Sunday, 4 Jan 2020 0:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/" sparkle:version="2.24" type="application/octet-stream" />
+    </item>
+    </channel>
+</rss>

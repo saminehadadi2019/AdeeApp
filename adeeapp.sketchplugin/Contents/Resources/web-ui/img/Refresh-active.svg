@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon/Refresh Copy</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Touch/W-H-Editor" transform="translate(-110.000000, -5.000000)" stroke="#36424B" stroke-width="0.9">
+            <g id="Size-Editor-H" transform="translate(92.958894, 17.000000) rotate(-270.000000) translate(-92.958894, -17.000000) translate(75.958894, -13.500000)">
+                <g id="Group" transform="translate(6.488991, 2.964718)">
+                    <g id="Refresh" transform="translate(4.125000, 5.250000) rotate(-92.000000) translate(-4.125000, -5.250000) ">
+                        <path d="M0,8.0071304 C0.672297385,9.30789779 2.02983204,10.1970624 3.5950422,10.1970624 C5.82862474,10.1970624 7.63930115,8.38638595 7.63930115,6.15280341 C7.63930115,3.91922086 5.82862474,2.10854446 3.5950422,2.10854446" id="Path"></path>
+                        <polyline id="Path-15" transform="translate(4.638520, 2.457159) rotate(7.000000) translate(-4.638520, -2.457159) " points="6.02358524 0.508181738 3.25345488 1.99442378 5.20955626 4.40613675"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
