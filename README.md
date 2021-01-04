@@ -1,4 +1,4 @@
 # AdeeApp
 The most Comprehensive Free Accessibility Testing Tool for Inclusive Design!
 
-Download it from https://www.adeeapp.com/
+Please check https://www.adeeapp.com/ for the latest version. The branch here is not maintained.
