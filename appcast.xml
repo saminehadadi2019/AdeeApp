@@ -10,7 +10,8 @@
       <description>
         <![CDATA[
           <ul>
-            <li>First release</li>
+            <li>Second release</li>
+            <li>New: Touch target size check based on standards</li>
             <li>Includes: color contrast, color blind and reporting tools</li>
           </ul>
         ]]>
