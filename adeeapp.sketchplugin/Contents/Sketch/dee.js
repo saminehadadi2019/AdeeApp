@@ -481,7 +481,8 @@ function checkLayerAndFill(prevData, layer) {
             color: (layer.style.fills[0] == null || layer.style.fills[0].fillType === "Gradient") ? "#ffffff" : layer.style.fills[0].color,
             type: 'ShapePath',
             textSize: "graphics",
-            selected: layer.selected
+            selected: layer.selected,
+            frame: null
         });
     } else if (layer.type === "Text") {
         layers.push({
@@ -490,7 +491,8 @@ function checkLayerAndFill(prevData, layer) {
             color: layer.style.textColor,
             type: 'Text',
             textSize: findTxtSize(layer),
-            selected: layer.selected
+            selected: layer.selected,
+            frame: null
         });
     } else if (layer.type === "Artboard") {
         if (layer.layers && layer.layers.length !== 0) {
@@ -504,7 +506,8 @@ function checkLayerAndFill(prevData, layer) {
             color: (layer.background.color == null ? "#ffffff" :  layer.background.color),
             type: "Artboard",
             textSize: "graphics",
-            selected: layer.selected
+            selected: layer.selected, 
+            frame: (layer.frame == null ? null:  layer.frame.width + "," + layer.frame.height)
         })
     } else if (layer.type === "SymbolInstance") {
         layers.push({
@@ -513,7 +516,8 @@ function checkLayerAndFill(prevData, layer) {
             color: (layer.style.fills[0] == null ? "#ffffff" :  layer.style.fills[0].color ),
             type: "SymbolInstance",
             textSize: "graphics",
-            selected: layer.selected
+            selected: layer.selected,
+            frame: null
         })
     } else if (layer.type === "Group") {
         if (layer.layers && layer.layers.length !== 0) {
@@ -527,7 +531,8 @@ function checkLayerAndFill(prevData, layer) {
             color: (layer.style.fills[0] == null ? "#ffffff" :  layer.style.fills[0].color),
             type: "Group",
             textSize: "graphics",
-            selected: layer.selected
+            selected: layer.selected,
+            frame: null
         })
     }
    else  if (layer.type === "Shape"){
@@ -542,9 +547,21 @@ function checkLayerAndFill(prevData, layer) {
             color: (layer.style.fills[0] == null ? "#ffffff" :  layer.style.fills[0].color),
             type: "ShapePath",
             textSize: "graphics",
-            selected: layer.selected
+            selected: layer.selected,
+            frame: null
         })
-     }
+    }
+    else if (layer.type === "HotSpot") {
+        layers.push({
+            id: layer.id,
+            name: layer.name,
+            color: "#ffffff",
+            type: "HotSpot",
+            textSize: "graphics",
+            selected: layer.selected,
+            frame: (layer.frame == null ? null:  layer.frame.width + "," + layer.frame.height)
+        })
+    }
     return layers;
 }
 

@@ -4,9 +4,7 @@
  * Proprietary and confidential
  * Written by Samine Hadadi <samine.hadadi@gmail.com>,  2020
  */ 
-
-/* open-sans-regular - latin */
-@font-face {
+ @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -47,6 +45,7 @@
     url('fonts/open-sans-v18-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
+
 html {
     /* Force the default cursor, even on text */
     cursor: default;
@@ -62,7 +61,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F9F9F9;
-    font-family: "Open Sans";
+    font-family: "Open Sans" !important;
     width: 550px;
     height: 360px;
     overflow: hidden;
@@ -99,6 +98,7 @@ article {
 .tab-title {
 
     font-size: 11px;
+    font-family: "Open Sans" !important;
     font-weight: bold;
 }
 
@@ -117,6 +117,7 @@ article {
     color: #333;
     margin: 0;
     font-size: 12px;
+    font-family: "Open Sans" !important;
     text-align: center;
 }
 
@@ -132,6 +133,7 @@ article {
     color: #fff;
     cursor: pointer;
     font-size: 16px;
+    font-family: "Open Sans" !important;
     line-height: 13px;
     text-align: center;
     text-indent: -1000px;
@@ -148,6 +150,7 @@ article {
 .discription {
     color: #FFFFFF;
     font-size: 9px;
+    font-family: "Open Sans" !important;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 13px;
@@ -182,7 +185,7 @@ article {
 .learn-more {
     opacity: 0.86;
     color: #000;
-
+    font-family: "Open Sans" !important;
     font-size: 11px;
     letter-spacing: 0;
     line-height: 15px;
@@ -198,6 +201,7 @@ article {
 .toggle-text {
     color: #FFFFFF;
     font-size: 9px;
+    font-family: "Open Sans" !important;
     font-weight: 600;
     letter-spacing: 0;
     line-height: 13px;
@@ -255,6 +259,7 @@ article {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     text-align: center;
 }
@@ -279,6 +284,7 @@ article {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
+    font-family: "Open Sans" !important;
     color: #818181;
     display: block;
 }
@@ -291,6 +297,7 @@ article {
     height: 100vh;
     /* Same as the width of the sidenav */
     font-size: 12px;
+    font-family: "Open Sans" !important;
     /* Increased text to enable scrolling */
     padding: 0 ;
     position: relative;
@@ -328,6 +335,7 @@ article {
     text-align: left;
     cursor: pointer;
     font-size: 17px;
+    font-family: "Open Sans" !important;
     padding: 0;
     margin:0;
     position: relative;
@@ -341,6 +349,7 @@ article {
     top: 24px;
     left: 55px;
     font-size: 13px;
+    font-family: "Open Sans" !important;
     color: white;
     display: none;
 }
@@ -356,6 +365,7 @@ span.textbox {
     padding: 1px 3px;
     border: 0.5px #36424B solid;
     font-size: 9pt;
+    font-family: "Open Sans" !important;
     width: 60%;
     display: inline-block;
     border-radius: 5px;
@@ -399,7 +409,7 @@ input[type=range]::-moz-range-progress {
 
 /* .status-header {
     color: #36424B;
-    font-family: "Open Sans";
+    font-family: "Open Sans" !important;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0;
@@ -411,6 +421,7 @@ input[type=range]::-moz-range-progress {
     color: #1BBCB8;
     font-size: 12px;
     font-weight: 600;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 17px;
     text-align: center;
@@ -455,6 +466,7 @@ input[type=range]::-moz-range-progress {
     border-radius: 3px;
     text-align: center;
     font-size: 18px;
+    font-family: "Open Sans" !important;
     line-height: 28px;
     margin: 0 auto;
 }
@@ -474,10 +486,13 @@ input[type=range]::-moz-range-progress {
     box-shadow:  0 1px 3px 0 rgba(0,0,0,0.2);
 }
 
+
+
 .apply-btn-text, .edit-btn-text  {
     color: #36424B;
     margin: 0;
     font-size: 9px;
+    font-family: "Open Sans" !important;
     font-weight: bold;
 }
 
@@ -485,6 +500,7 @@ input[type=range]::-moz-range-progress {
     color: #36424B;
     font-size: 9px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 17px;
     text-align: center;
@@ -589,6 +605,7 @@ tr:nth-child(odd) {
     float: right;
     font-size: 24px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     margin-right: 5px;
 }
 
@@ -623,6 +640,7 @@ tr:nth-child(odd) {
 .expand-btn {
     color: #fff !important;
     font-size: 25px !important;
+    font-family: "Open Sans" !important;
     text-align: center !important;
 }
 
@@ -630,6 +648,7 @@ tr:nth-child(odd) {
     color: #36424B;
     font-size: 14px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 19px;
     text-align: center;
@@ -638,6 +657,7 @@ tr:nth-child(odd) {
 .popup-subtitle {
     color: #36424B;
     font-size: 12px;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 17px;
     padding: 0 32px 0 32px;
@@ -647,6 +667,7 @@ tr:nth-child(odd) {
     color: #36424B;
     font-size: 18px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 24px;
     text-align: center;
@@ -657,6 +678,7 @@ tr:nth-child(odd) {
     font-family: Roboto , "Open Sans";
     font-size: 21px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 24px;
     text-align: center;
@@ -673,6 +695,7 @@ tr:nth-child(odd) {
 
 .ratio-status {
     font-size: 12px;
+    font-family: "Open Sans" !important;
     line-height: 14px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -698,7 +721,7 @@ tr:nth-child(odd) {
 }
 
 .btn-container {
-    text-align: center;
+    text-align: right;
     margin-bottom: 10px;
     white-space: nowrap;
 }
@@ -708,6 +731,7 @@ tr:nth-child(odd) {
 
     font-size: 12px;
     font-weight: 600;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 17px;
 }
@@ -716,6 +740,7 @@ tr:nth-child(odd) {
     color: #36424B;
 
     font-size: 12px;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 17px;
 }
@@ -729,6 +754,7 @@ tr:nth-child(odd) {
 
     font-size: 12px;
     font-weight: 600;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 22px;
     text-align: center;
@@ -787,6 +813,10 @@ tr:nth-child(odd) {
     padding: 5px;
 }
 
+.touch-capture{
+    padding:  5px;
+}
+
 
 /* creating custom checkbox */
 
@@ -798,6 +828,7 @@ tr:nth-child(odd) {
 
     cursor: pointer;
     font-size: 22px;
+    font-family: "Open Sans" !important;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -836,22 +867,22 @@ tr:nth-child(odd) {
     transition: all .2s ease;
     border-radius: 1px;
 }
-#reports-container-report , #reports-container-blind {
+#reports-container-report , #reports-container-blind , #reports-container-touch{
     margin-left: 20px;
 }
 
-#reports-container-report .checkbox-container, #reports-container-blind .checkbox-container{
+#reports-container-report .checkbox-container, #reports-container-blind .checkbox-container, #reports-container-touch .checkbox-container{
     margin-top:35px;
     padding: 3px !important;
     border: 1px solid #E2E2E2;
     margin-bottom: 20px;
 }
 
-#reports-container-report .checkmark, #reports-container-blind  .checkmark {
+#reports-container-report .checkmark, #reports-container-blind  .checkmark, #reports-container-touch  .checkmark  {
     top: -30px;
 }
 
-#reports-container-report .checkbox-container:hover , #reports-container-blind .checkbox-container:hover{
+#reports-container-report .checkbox-container:hover , #reports-container-blind .checkbox-container:hover, #reports-container-touch .checkbox-container:hover{
     border: 1px solid #00BCB9;
 }
 
@@ -916,6 +947,7 @@ tr:nth-child(odd) {
 
     font-size: 12px;
     font-weight: 600;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     text-align: center;
 }
@@ -925,6 +957,7 @@ tr:nth-child(odd) {
 
     font-size: 12px;
     font-weight: 600;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     display: inline-block;
     padding-left: 25px;
@@ -936,6 +969,7 @@ tr:nth-child(odd) {
 
     font-size: 12px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 25px;
     margin: 0;
@@ -1007,6 +1041,7 @@ tr:nth-child(odd) {
 
     font-size: 10px;
     font-weight: 600;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 14px;
     margin:7px 0 3px;
@@ -1052,9 +1087,10 @@ tr:nth-child(odd) {
     left: 5px;
     display: none;
     font-size: 8px;
+    
     color: #fff;
     padding: 2px;
-    font-family: "Open Sans";
+    font-family: "Open Sans" !important;
     line-height: 10px;
     text-align: center;
 }
@@ -1117,6 +1153,7 @@ tr:nth-child(odd) {
     float: right;
     font-size: 24px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     margin-right: 5px;
 }
 
@@ -1151,6 +1188,7 @@ tr:nth-child(odd) {
 
     font-size: 14px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 19px;
     text-align: center;
@@ -1160,6 +1198,7 @@ tr:nth-child(odd) {
     color: #36424B;
 
     font-size: 14px;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 17px;
     padding: 0 32px 0 32px;
@@ -1184,6 +1223,7 @@ tr:nth-child(odd) {
     color: #4A4A4A;
     font-size: 10px;
     font-weight: 600;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 14px;
     text-align: center;
@@ -1208,6 +1248,7 @@ tr:nth-child(odd) {
     background-color: #fff;
     border-radius: 3px;
     font-size: 9px;
+    font-family: "Open Sans" !important;
     padding: 0 3px;
 }
 
@@ -1216,6 +1257,7 @@ tr:nth-child(odd) {
     color: #BAB6BB;
 
     font-size: 10px;
+    font-family: "Open Sans" !important;
     text-align: center;
 }
 
@@ -1224,6 +1266,7 @@ tr:nth-child(odd) {
     color: #BAB6BB;
 
     font-size: 10px;
+    font-family: "Open Sans" !important;
     text-align: center;
     opacity: 1;
 }
@@ -1232,6 +1275,7 @@ tr:nth-child(odd) {
     /* Mozilla Firefox 19+ */
     color: #BAB6BB;
     font-size: 10px;
+    font-family: "Open Sans" !important;
     text-align: center;
     opacity: 1;
 }
@@ -1241,6 +1285,7 @@ tr:nth-child(odd) {
     color: #BAB6BB;
 
     font-size: 10px;
+    font-family: "Open Sans" !important;
     text-align: center;
 }
 
@@ -1254,6 +1299,7 @@ tr:nth-child(odd) {
     background-color: rgba(125, 138, 147, 0.23);*/
     text-align: center;
     font-size: 10px;
+    font-family: "Open Sans" !important;
     position: absolute;
     left: 10px;
     top: 10px;
@@ -1264,6 +1310,7 @@ tr:nth-child(odd) {
 
     font-size: 10px;
     font-weight: 600;
+    font-family: "Open Sans" !important;
     letter-spacing: 0;
     line-height: 14px;
 }
@@ -1325,6 +1372,7 @@ tr:nth-child(odd) {
 a.inline {
     display: inline-block !important;
     font-size: inherit !important;
+    font-family: "Open Sans" !important;
     color: #fff !important;
     text-decoration: underline;
     margin: 0;
@@ -1363,6 +1411,7 @@ a.inline {
     font-size: 12px;
     font-weight: 600;
     color:  #04A3A0;
+    font-family: "Open Sans" !important;
     text-decoration: none;
 }
 .table-transparent {
@@ -1375,6 +1424,7 @@ a.inline {
     background-color: rgba(4,163,160,0.07);}
 .table-transparent .object-name {
     font-weight: 600;
+    font-family: "Open Sans" !important;
     white-space: nowrap;
     margin: 0;}
 .column-object-name {
@@ -1393,6 +1443,7 @@ a.inline {
         width: 100%;
         border: none;
         font-size: 10px;
+        font-family: "Open Sans" !important;
     }
     .table-responsive tbody {
         width: 100%;
@@ -1417,6 +1468,7 @@ a.inline {
         left: 10px;
         top: 5px;
         font-size: 9px;
+        font-family: "Open Sans" !important;
         text-transform: uppercase;}
     .table-responsive.no-header td:before {
         content: attr(data-label);
@@ -1424,12 +1476,26 @@ a.inline {
         width: 40px;
         padding-right: 20px;
         font-weight: bold;
+        font-family: "Open Sans" !important;
         text-transform: uppercase;
     }
     .table-responsive.no-header .thead {
         display: none}
 }
 .no-support {
+    color: #E3170A;
+    text-transform: uppercase;
+}
+.touch-inactive{
+    color: #bbbaba;
+    text-transform: uppercase;
+}
+.per-spec {
+    color: #51B51F;
+    text-transform: uppercase;
+}
+
+.not-per-spec {
     color: #E3170A;
     text-transform: uppercase;
 }
@@ -1483,8 +1549,8 @@ select {
     appearance:none;
     border-radius: 5px;
     height: 24px;
-    color: #B0B7BC;
-
+    color: #000000;
+    font-family: "Open Sans" !important;
     font-size: 9px;
     padding: 0 20px 0 5px;
     border: 0.5px solid #36424B;
@@ -1518,6 +1584,7 @@ select {
     color: #1BBCB8;
     margin: 0;
     font-size: 9px;
+    font-family: "Open Sans" !important;
     font-weight: bold;}
 
 .comment-btn {
@@ -1570,6 +1637,7 @@ select {
     margin-bottom: 7px;
     font-size: 8px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     padding: 0 5px 0 30px;
     line-height: 28px;
     -webkit-transition: all .2s ease;
@@ -1604,6 +1672,7 @@ select {
 .input-field  .choices__list--multiple .choices__item {
     padding: 0;
     font-size: 10px;
+    font-family: "Open Sans" !important;
     background: none;
     color: #333;
     position: relative;
@@ -1629,6 +1698,7 @@ select {
 .input-field .choices__input {
     margin-bottom: 0;
     font-size: 9px;
+    font-family: "Open Sans" !important;
     background-color: #fff;
     padding:2px 0 2px 2px}
 .content {
@@ -1678,6 +1748,7 @@ select {
 .size-panel .input-control .title {
     font-size: 9px;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     padding: 0 4px;}
 .size-panel .input-control label {
     position: relative;}
@@ -1726,6 +1797,7 @@ select {
 .choices__list--dropdown .choices__item {
     padding:5px 10px;
     font-size: 9px;
+    font-family: "Open Sans" !important;
 }
 .choices__list--dropdown .choices__item--selectable {
     padding-right: 20px !important;
@@ -1735,6 +1807,7 @@ select {
 .choices__heading {
     color : #333 ;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     padding: 5px 10px;
     border-bottom: none;
     font-size: 9px;
@@ -1827,6 +1900,7 @@ select {
     transition: all 300ms ease;
     z-index : 1;
     font-weight: bold;
+    font-family: "Open Sans" !important;
     height: 17px;
     padding: 0;
     width: 17px;
@@ -1847,6 +1921,7 @@ select {
     padding: 0 40px 0 25px;
     display: inline-block;
     font-size: 15px;
+    font-family: "Open Sans" !important;
     resize: vertical;
     border: 0.5px solid rgba(54,66,75,0.35);
     background-color: rgba(216,216,216,0.26);

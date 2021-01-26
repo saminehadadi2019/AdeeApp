@@ -6,7 +6,7 @@
     <description>The most comprehensive free accessibility testing tool for inclusive design!</description>
     <language>en</language>
     <item>
-      <title>Version 1.0.0</title>
+      <title>Version 1.1.0</title>
       <description>
         <![CDATA[
           <ul>
@@ -15,7 +15,7 @@
           </ul>
         ]]>
       </description>
-      <pubDate>Monday, 4 Jan 2020 0:00:00 +0000</pubDate>
+      <pubDate>Tuesday, 26 Jan 2021 0:00:00 +0000</pubDate>
       <enclosure url="https://deetasker.com/adeerelease/publish/sketch/adeeapp.sketchplugin.zip" sparkle:version="1.0.0" type="application/octet-stream" />
     </item>
     </channel>

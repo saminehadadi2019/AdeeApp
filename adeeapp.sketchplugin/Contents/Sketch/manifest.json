@@ -9,7 +9,7 @@
   "description": "Design for all. The most comprehensive free accessibility testing tool for inclusive design!",
   "author": "AdeeApp.com",
   "homepage": "https://www.adeeapp.com/",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "identifier": "com.adeeapp.sketch.plugin.adeeapp",
   "appcast": "https://deetasker.com/adeerelease/publish/sketch/adeeapp-sketch-plugin-appcast.xml",
   "compatibleVersion": "52.1",
