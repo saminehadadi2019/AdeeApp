@@ -6,17 +6,19 @@
     <description>The most comprehensive free accessibility testing tool for inclusive design!</description>
     <language>en</language>
     <item>
-      <title>Version 1.1.0</title>
+      <title>Version 1.1.1</title>
       <description>
         <![CDATA[
           <ul>
-            <li>First release</li>
+            <li>Second release</li>
+            <li>New: Touch target size check based on standards</li>
             <li>Includes: color contrast, color blind and reporting tools</li>
+            <li>Bug: related to not loading symboles have been resolved</li>
           </ul>
         ]]>
       </description>
-      <pubDate>Tuesday, 26 Jan 2021 0:00:00 +0000</pubDate>
-      <enclosure url="https://deetasker.com/adeerelease/publish/sketch/adeeapp.sketchplugin.zip" sparkle:version="1.1.0" type="application/octet-stream" />
+      <pubDate>Monday, 1 Feb 2021 0:00:00 +0000</pubDate>
+      <enclosure url="https://deetasker.com/adeerelease/publish/sketch/adeeapp.sketchplugin.zip" sparkle:version="1.1.1" type="application/octet-stream" />
     </item>
     </channel>
 </rss>

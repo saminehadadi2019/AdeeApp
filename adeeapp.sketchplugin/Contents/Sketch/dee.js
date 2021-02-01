@@ -459,7 +459,10 @@ function setArtboardImage(data) {
 // Get all layers and global colors info
 function getAllLayersAndColors() {
     const document = sketch.getSelectedDocument();
-    const selectedPage = document.selectedPage;
+    var selectedPage = null; 
+    var page = require('sketch/dom').Page
+
+    selectedPage = document.selectedPage;
     const colors = sketch.globalAssets.colors;
 
 
@@ -482,9 +485,25 @@ function checkLayerAndFill(prevData, layer) {
             type: 'ShapePath',
             textSize: "graphics",
             selected: layer.selected,
-            frame: null
+            frame: (layer.frame == null ? null:  layer.frame.width + "," + layer.frame.height)
         });
-    } else if (layer.type === "Text") {
+    } else if (layer.type === "SymbolMaster") {
+        if (layer.layers && layer.layers.length !== 0) {
+            layer.layers.forEach((innerLayer) => {
+                checkLayerAndFill(layers, innerLayer);
+            });
+        }
+        layers.push({
+            id: layer.id,
+            name: layer.name,
+            color: (layer.style.fills[0] == null ? "#ffffff" : layer.style.fills[0].color),
+            type: "Artboard",
+            textSize: "graphics",
+            selected: layer.selected,
+            frame: (layer.frame == null ? null:  layer.frame.width + "," + layer.frame.height)
+        })
+    }
+    else if (layer.type === "Text") {
         layers.push({
             id: layer.id,
             name: layer.name,
@@ -492,7 +511,7 @@ function checkLayerAndFill(prevData, layer) {
             type: 'Text',
             textSize: findTxtSize(layer),
             selected: layer.selected,
-            frame: null
+            frame: (layer.frame == null ? null:  layer.frame.width + "," + layer.frame.height)
         });
     } else if (layer.type === "Artboard") {
         if (layer.layers && layer.layers.length !== 0) {
@@ -517,7 +536,7 @@ function checkLayerAndFill(prevData, layer) {
             type: "SymbolInstance",
             textSize: "graphics",
             selected: layer.selected,
-            frame: null
+            frame: (layer.frame == null ? null:  layer.frame.width + "," + layer.frame.height)
         })
     } else if (layer.type === "Group") {
         if (layer.layers && layer.layers.length !== 0) {
@@ -532,7 +551,7 @@ function checkLayerAndFill(prevData, layer) {
             type: "Group",
             textSize: "graphics",
             selected: layer.selected,
-            frame: null
+            frame: (layer.frame == null ? null:  layer.frame.width + "," + layer.frame.height)
         })
     }
    else  if (layer.type === "Shape"){
@@ -548,7 +567,7 @@ function checkLayerAndFill(prevData, layer) {
             type: "ShapePath",
             textSize: "graphics",
             selected: layer.selected,
-            frame: null
+            frame: (layer.frame == null ? null:  layer.frame.width + "," + layer.frame.height)
         })
     }
     else if (layer.type === "HotSpot") {
